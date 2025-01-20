@@ -30,7 +30,9 @@ body{
   padding: 5px 1em;
   background-color: var(--base-clr);
   border-right: 1px solid var(--line-clr);
-
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   position: sticky;
   top: 0;
   align-self: start;
@@ -44,6 +46,9 @@ body{
 }
 #sidebar ul{
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
 }
 #sidebar > ul > li:first-child{
   display: flex;
@@ -80,7 +85,6 @@ body{
 }
 #sidebar svg{
   flex-shrink: 0;
-  fill: var(--text-clr);
 }
 #sidebar a span, #sidebar .dropdown-btn span{
   flex-grow: 1;
@@ -171,7 +175,9 @@ main p{
 
   }
 }
-
+.log.out {
+  margin-top: auto; 
+}
 table {
   width: 100%;
   border-collapse: collapse;
