@@ -56,10 +56,10 @@ body{
 }
 #sidebar ul li.active a{
   color: var(--accent-clr);
+}
 
-  svg{
-    fill: var(--accent-clr);
-  }
+#sidebar ul li.active a svg #Icon-Set {
+  fill: var(--accent-clr); 
 }
 
 #sidebar a, #sidebar .dropdown-btn, #sidebar .logo{
@@ -241,4 +241,199 @@ main p{
 
 .edit-button:hover {
     background: var(--accent-clr);
+}
+
+
+
+h2 {
+  color: var(--text-clr);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.container {
+  background-color: var(--base-clr);
+  border: 1px solid var(--line-clr);
+  border-radius: 1em;
+  padding: 2em 3em;
+  max-width: 600px;
+  width: 100%;
+}
+
+.form-row {
+  margin-bottom: 1.5em;
+}
+
+.input-data {
+  position: relative;
+  width: 100%;
+}
+
+.input-data input,
+.textarea textarea {
+  width: 100%;
+  padding: 1rem;
+  background: transparent;
+  border: 1px solid var(--line-clr);
+  border-radius: .5em;
+  color: var(--text-clr);
+  font-size: 1rem;
+  outline: none;
+}
+
+.input-data input:focus,
+.textarea textarea:focus {
+  border-color: var(--accent-clr);
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 10px;
+  color: var(--secondary-text-clr);
+  font-size: 0.9rem;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.input-data input:focus + .label,
+.textarea textarea:focus + .label,
+.input-data input:not(:placeholder-shown) + .label,
+.textarea textarea:not(:placeholder-shown) + .label {
+  top: -15px;
+  font-size: 0.8rem;
+  color: var(--accent-clr);
+}
+
+
+
+.input-data input:focus ~ .underline,
+.textarea textarea:focus ~ .underline {
+  background-color: var(--accent-clr);
+}
+
+.textarea textarea {
+  resize: none;
+  height: 150px;
+}
+
+.submit-btn {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.submit-btn .input-data input {
+  background-color: var(--accent-clr);
+  color: var(--base-clr);
+  padding: 1em;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: .5em;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn .input-data input:hover {
+  background-color: var(--hover-clr);
+}
+
+.submit-btn .inner {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  .container {
+    padding: 2em 1.5em;
+    width: 100%;
+  }
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+
+
+
+label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #888;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+
+input:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:focus + label,
+textarea:not(:placeholder-shown) + label {
+  top: 0;
+  left: 20px;
+  font-size: 12px;
+  color: #3f51b5; 
+}
+
+textarea + label {
+  top: 12px;
+}
+
+input:focus, textarea:focus {
+  border-color: #3f51b5;
+  outline: none;
+}
+
+.avatar {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  justify-self: center;
+}
+
+.avatar-circle {
+  width: 100%;
+  height: 100%;
+  background: var(--line-clr);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2em;
+}
+
+.avatar-plus {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #1c1f2b;
+  padding: 8px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.formulario{
+  padding-top: 2em;
+}
+
+main {
+  justify-items: center;
 }
