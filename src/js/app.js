@@ -8,4 +8,3 @@ function toggleSidebar(){
   closeAllSubMenus()
 }
 
-
