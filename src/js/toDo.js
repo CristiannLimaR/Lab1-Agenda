@@ -45,7 +45,7 @@ function editTodo(id) {
 
   todoElement.innerHTML = `
                 <input type="text" value="${todo.text}" id="edit-${id}">
-                <select id="edit-priority-${id}">
+                <select id="edit-priority-${id}" class="todo-edit">
                     <option value="high" ${
                       todo.priority === "high" ? "selected" : ""
                     }>Alta</option>
